@@ -35,7 +35,7 @@ Updates posted below
 In `Climate Data.ipynb`:
      We looked at CO2 emissions data from NOAA and the EU. 
      
-     After fetching/downloading in a zipfile, parsing and cleaning the csv files,and creating interesting plots with dataframes from the pandas library, we applied the simple least squares algorithm to find a best fit line to "predict" trends in Carbon Emission Sources. 
+After fetching/downloading in a zipfile, parsing and cleaning the csv files,and creating interesting plots with dataframes from the pandas library, we applied the simple least squares algorithm to find a best fit line to "predict" trends in Carbon Emission Sources. 
 
 
 
