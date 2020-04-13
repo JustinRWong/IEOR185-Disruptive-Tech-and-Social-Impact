@@ -1,6 +1,7 @@
 ##  Using Web3
 from web3 import Web3
 import json
+
 # from shared_lib import *
 
 ################################################################################
@@ -41,36 +42,36 @@ import json
 
 ###############################################################################
 # ##  Sending transactions on a local blockchain Ganache(imagine this being the Ethereum Main net)
-ganache_url = "http://127.0.0.1:7545"
-web3 = Web3(Web3.HTTPProvider(ganache_url))
-
-account_sender = '0xf387b3256865b24a13cb416f30A2e130E47ff6FA'
-account_recipient = '0xcA7dA3795C7F5Fb15912050B01e3b3790197386d'
-
-sender_private_key = '38bda8028fb8272d65603a7fadb8fa6f51b4952877712032cc30e42e98784dd5'
-recipient_private_key = '51f67f264e7a5b57e4b9d5c3e14772cfc8a1d90668f4172e7bdb501b01d8f536'
-
-
-# get a nonce
-nonce = web3.eth.getTransactionCount(account_sender)
-amount_to_send = 1
-## Build transaction
-tx = {
-    'nonce' : nonce,                           ## prevents sending transaction twice
-    'to'    : account_recipient,
-    'value' : web3.toWei(amount_to_send, 'ether'),
-    'gas'   : 200000,
-    'gasPrice': web3.toWei('50', 'gwei')
-}
-
-## Sign ttransaction
-signed_tx = web3.eth.account.signTransaction(tx, sender_private_key)
-
-## Send transaction
-tx_hash = web3.eth.sendRawTransaction(signed_tx.rawTransaction)
-
-## Get transaction hash
-print(tx_hash)
+# ganache_url = "http://127.0.0.1:7545"
+# web3 = Web3(Web3.HTTPProvider(ganache_url))
+#
+# account_sender = '0xf387b3256865b24a13cb416f30A2e130E47ff6FA'
+# account_recipient = '0xcA7dA3795C7F5Fb15912050B01e3b3790197386d'
+#
+# sender_private_key = '38bda8028fb8272d65603a7fadb8fa6f51b4952877712032cc30e42e98784dd5'
+# recipient_private_key = '51f67f264e7a5b57e4b9d5c3e14772cfc8a1d90668f4172e7bdb501b01d8f536'
+#
+#
+# # get a nonce
+# nonce = web3.eth.getTransactionCount(account_sender)
+# amount_to_send = 1
+# ## Build transaction
+# tx = {
+#     'nonce' : nonce,                           ## prevents sending transaction twice
+#     'to'    : account_recipient,
+#     'value' : web3.toWei(amount_to_send, 'ether'),
+#     'gas'   : 200000,
+#     'gasPrice': web3.toWei('50', 'gwei')
+# }
+#
+# ## Sign ttransaction
+# signed_tx = web3.eth.account.signTransaction(tx, sender_private_key)
+#
+# ## Send transaction
+# tx_hash = web3.eth.sendRawTransaction(signed_tx.rawTransaction)
+#
+# ## Get transaction hash
+# print(tx_hash)
 
 
 ################################################################################
@@ -113,3 +114,80 @@ print(tx_hash)
 # contract_python_deployed = web3.eth.contract(address=receipt_python_deployed.contractAddress, abi=abi)
 # ## This should be specifed from above
 # print(contract_python_deployed.functions.greet().call())
+
+
+####################### WEB APP DEMO BELOW ###############################
+from flask import Flask, redirect, url_for, request, render_template
+app = Flask(__name__)
+
+@app.route('/admin')
+def hello_admin():
+   return 'Hello Admin'
+
+@app.route('/guest/<guest>')
+def hello_guest(guest):
+   return 'Hello %s as Guest' % guest
+
+@app.route('/user/<name>')
+def hello_user(name):
+   if name =='admin':
+      return redirect(url_for('hello_admin'))
+   else:
+      return redirect(url_for('hello_guest',guest = name))
+
+
+@app.route('/success/<name>')
+def success(name):
+
+   return render_template("send_amount.html", name="name")
+
+
+## For a basic, non secure login page
+@app.route('/login',methods = ['POST', 'GET'])
+def login():
+   if request.method == 'POST':
+      user = request.form['nm']
+      return redirect(url_for('success',name = user))
+   else:
+      # user = request.args.get('nm')
+      # return redirect(url_for('success',name = user))
+      return render_template("login.html")
+
+@app.route('/send_amount', methods=['POST'])
+def send_amount():
+    if request.method == 'POST':
+       sender = request.form['sender']
+       sender_private_key = request.form['sender_private_key']
+       receiver = request.form['receiver']
+       amount = request.form['amount']
+       print(sender, receiver, amount)
+       tx_hash = send_money(sender, sender_private_key,receiver, amount)
+       return render_template("money_sent.html", sender=sender, receiver=receiver, amount=amount, tx_hash=tx_hash)
+
+
+ganache_url = "http://127.0.0.1:7545"
+web3 = Web3(Web3.HTTPProvider(ganache_url))
+def send_money(sender, sender_private_key, receiver, amount):
+    # get a nonce
+    nonce = web3.eth.getTransactionCount(sender)
+
+    ## Build transaction
+    tx = {
+        'nonce' : nonce,                           ## prevents sending transaction twice
+        'to'    : receiver,
+        'value' : web3.toWei(amount, 'ether'),
+        'gas'   : 200000,
+        'gasPrice': web3.toWei('50', 'gwei')
+    }
+
+
+    ## Sign ttransaction
+    signed_tx = web3.eth.account.signTransaction(tx, sender_private_key)
+
+    ## Send transaction
+    tx_hash = web3.eth.sendRawTransaction(signed_tx.rawTransaction)
+
+    return tx_hash
+
+if __name__ == '__main__':
+   app.run(debug = True)
