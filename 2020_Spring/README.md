@@ -25,7 +25,7 @@ git clone https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impa
 cd 2020_Spring/app
 ```
 3. Open Ganache and check the Ganache RPC Server aligns with `ganach_url` in app.py
-![](../Screenshots/Screenshot%202020-04-14%20at%201.36.59%20PM.png)
+![Ganache](../Screenshots/Screenshot%202020-04-14%20at%201.36.59%20PM.png)
 4. Simply run `python3 app.py`
 
 
