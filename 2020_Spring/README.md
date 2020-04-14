@@ -42,9 +42,9 @@ Doing so will start the Flask server and the following endpoints will be availab
 - http://127.0.0.1:5000/login is a route with both GET and POST capabilities
       - The GET renders the page on a broswer, while POST is called after the `submit` button is clicked
       
-| [![Login With Boostrap](Screenshots/Screenshot%202020-04-14%20at%202.00.30%20PM.png)](http://videoblocks.com)  | [![Login Without Boostrap](Screenshots/Screenshot%202020-04-14%20at%201.44.11%20PM.png)](http://audioblocks.com) |
+| [![Login With Boostrap](Screenshots/Screenshot%202020-04-14%20at%202.00.30%20PM.png)](app/app.py#L161-L169)  | [![Login Without Boostrap](Screenshots/Screenshot%202020-04-14%20at%201.44.11%20PM.png)](app/app.py#L161-L169) |
 |:---:|:---:|
-| http://videoblocks.com | http://audioblocks.com |
+| With Bootstrap | WithBootstrap |
 
 - http://localhost:5000/success/Justin is the result of the POST call to http://127.0.0.1:5000/login after filling out the form.
       - This page has been modified since the lecture to include some styling to center align the page
