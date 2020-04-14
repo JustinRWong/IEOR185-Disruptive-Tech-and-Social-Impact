@@ -31,9 +31,9 @@ cd 2020_Spring/app
 
 Doing so will start the Flask server and the following endpoints will be available for usage.
 
-| [![HealthCheck](Screenshots/HealthCheck.png)](app/app.py#L138-L140)  | [![Admin](Screenshots/AdminRaw.png)](app/app.py#L138-L1) | [![Admin](Screenshots/justinAsGuest.png)](app/app.py#L142-L144)
+| [![HealthCheck](Screenshots/HealthCheck.png)](app/app.py#L138-L140)  | [![Admin](Screenshots/AdminRaw.png)](app/app.py#L138-L1) | [![justin as Guest](Screenshots/justinAsGuest.png)](app/app.py#L142-L144)
 |:---:|:---:|:---|
-| Health Check at http://127.0.0.1:5000/ to ensure that your Flask server  is up and running | Raw Admin at http://127.0.0.1:5000/admin  to show that raw text can be rendered using app.route('/admin') | Guest User at http://127.0.0.1:5000/guest/justin example page to show that you can parameterize endpoints with the app.route('/guest/<guest>') by including the VAR in `<VAR>
+| Health Check at http://127.0.0.1:5000/ to ensure that your Flask server  is up and running | Raw Admin at http://127.0.0.1:5000/admin  to show that raw text can be rendered using app.route('/admin') | Guest User at http://127.0.0.1:5000/guest/justin example page to show that you can parameterize endpoints with the app.route('/guest/<guest>') by including the VAR in `<VAR> |
 
 - http://127.0.0.1:5000/user/admin and http://127.0.0.1:5000/user/nonadmin are endpoints to show that login can be implemented to redirect endpoints based on the URL.
 
