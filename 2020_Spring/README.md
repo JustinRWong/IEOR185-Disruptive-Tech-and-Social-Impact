@@ -39,7 +39,7 @@ Doing so will start the Flask server and the following endpoints will be availab
 |:---:|:---:|
 | Raw Admin at http://127.0.0.1:5000/user/admin  to show that login can be implemented to redirect endpoints based on the URL | Guest User at http://127.0.0.1:5000/guest/justin example page to show that you can parameterize endpoints with the app.route('/guest/<guest>') by including the VAR in `<VAR> |
 
-| [![Bootstrap Login](Screenshots/LoginBootstrap.png)](app/app.py#L161-L169) | [![Non bootrstrap login](Screenshots/Login.png)](app/templates/login.html) |
+| [![Bootstrap Login](Screenshots/LogInBootstrap.png)](app/app.py#L161-L169) | [![Non bootrstrap login](Screenshots/LogIn.png)](app/templates/login.html) |
 |:---:|:---:|
 | http://127.0.0.1:5000/login is a route with both GET and POST capabilities. The GET renders the page on a broswer, while POST is called after the `submit` button is clicked | The left is with Boostrap for HTML styling, while the left is without |
   
