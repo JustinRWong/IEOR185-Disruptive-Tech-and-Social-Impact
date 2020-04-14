@@ -8,3 +8,6 @@
 * `Web3` python package (available with `pip install web3`)
 * Python 3.6+
 * `Ganache` installed (https://www.trufflesuite.com/ganache)
+* pipenv
+* gunicorn
+* Flask
