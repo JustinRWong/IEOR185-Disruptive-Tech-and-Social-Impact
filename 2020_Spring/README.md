@@ -43,12 +43,13 @@ Doing so will start the Flask server and the following endpoints will be availab
 |:---:|:---:|
 | http://127.0.0.1:5000/login is a route with both GET and POST capabilities. | The left is with Boostrap for HTML styling, while the left is without |
 
- The GET renders the page on a broswer, while POST is called after the `submit` button is clicked
+ The GET renders the page on a broswer, while POST is called after the `submit` button is clicked. This page has been modified since the lecture to include some styling to center align the page
   
+  
+  | [![Send Money](Screenshots/TXForm.png)](app/app.py#L171-L207) | [![Transaction success](Screenshots/TXReceipt.png)](app/templates/money_sent.html) |
+|:---:|:---:|
+| http://localhost:5000/success/Justin is the form where a user can send money, providing the addresses, their private key, and an amount. | http://localhost:5000/send_amount Upon send, the POST API call receives data, and we call a python function for both participants to  sign and execute the transaction for us. |
 
-- http://localhost:5000/success/Justin is the result of the POST call to http://127.0.0.1:5000/login after filling out the form.
-      - This page has been modified since the lecture to include some styling to center align the page
-###  Screenshot here
 
 ##  Summary  
 The Demo here is primarily focused on how to connect a front end with executing a smart contract in the backend. We use Flask to render all pages and Web3 to handle the transactions on our blockchain network(Ganache in this case, though this can be a live blockchain network like ETH or OmiseGo). 
