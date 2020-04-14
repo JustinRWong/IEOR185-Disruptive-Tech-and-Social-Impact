@@ -41,6 +41,7 @@ Doing so will start the Flask server and the following endpoints will be availab
 
 - http://127.0.0.1:5000/login is a route with both GET and POST capabilities
       - The GET renders the page on a broswer, while POST is called after the `submit` button is clicked
+      
 | [![Login With Boostrap](Screenshots/Screenshot%202020-04-14%20at%202.00.30%20PM.png)](http://videoblocks.com)  | [![Login Without Boostrap](Screenshots/Screenshot%202020-04-14%20at%201.44.11%20PM.png)](http://audioblocks.com) |
 |:---:|:---:|
 | http://videoblocks.com | http://audioblocks.com |
