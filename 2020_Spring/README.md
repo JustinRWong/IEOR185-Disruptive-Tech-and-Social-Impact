@@ -25,17 +25,15 @@ git clone https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impa
 cd 2020_Spring/app
 ```
 3. Open Ganache and check the Ganache RPC Server aligns with `ganach_url` in app.py
-![Ganache](Screenshots/Screenshot%202020-04-14%20at%201.36.59%20PM.png)
+![Ganache](Screenshots/Ganache.png)
 4. Simply run `python3 app.py`
 
 
 Doing so will start the Flask server and the following endpoints will be available for usage.
-- http://127.0.0.1:5000/ is a health check to ensure that your Flask server  is up and running.
-![Health Check](Screenshots/Screenshot%202020-04-14%20at%202.00.22%20PM.png)
 
-- http://127.0.0.1:5000/admin is an example page to show that raw text can be rendered using app.route('/admin')
-
-- http://127.0.0.1:5000/guest/Example is an example apge to show that you can parameterize endpoints with the app.route('/guest/<guest>') by including the VAR in `<VAR>`.
+| [![HealthCheck](Screenshots/HealthCheck.png)](app/app.py#L138-L140)  | [![Admin](Screenshots/AdminRaw.png)](app/app.py#L138-L1) | [![Admin](Screenshots/justinAsGuest.png)](app/app.py#L142-L144)
+|:---:|:---:|:---|
+| Health Check at http://127.0.0.1:5000/ to ensure that your Flask server  is up and running | Raw Admin at http://127.0.0.1:5000/admin  to show that raw text can be rendered using app.route('/admin') | http://127.0.0.1:5000/guest/justin example page to show that you can parameterize endpoints with the app.route('/guest/<guest>') by including the VAR in `<VAR>
 
 - http://127.0.0.1:5000/user/admin and http://127.0.0.1:5000/user/nonadmin are endpoints to show that login can be implemented to redirect endpoints based on the URL.
 
