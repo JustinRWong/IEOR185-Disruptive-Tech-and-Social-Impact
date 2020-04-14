@@ -31,7 +31,7 @@ cd 2020_Spring/app
 
 Doing so will start the Flask server and the following endpoints will be available for usage.
 - http://127.0.0.1:5000/ is a health check to ensure that your Flask server  is up and running.
-![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%202.00.22%20PM.png)
+![Health Check](Screenshots/Screenshot%202020-04-14%20at%202.00.22%20PM.png)
 
 - http://127.0.0.1:5000/admin is an example page to show that raw text can be rendered using app.route('/admin')
 
@@ -41,7 +41,7 @@ Doing so will start the Flask server and the following endpoints will be availab
 
 - http://127.0.0.1:5000/login is a route with both GET and POST capabilities
       - The GET renders the page on a broswer, while POST is called after the `submit` button is clicked
-![](/../Screenshot/Screenshot%202020-04-14%20at%202.00.30%20PM.png)  |  ![](/../Screenshot%20Screenshot/2020-04-14%20at%201.44.11%20PM.png)
+![Login With Boostrap](Screenshot/Screenshot%202020-04-14%20at%202.00.30%20PM.png)  |  ![Login Without Boostrap](Screenshot/Screenshot/2020-04-14%20at%201.44.11%20PM.png)
 
 - http://localhost:5000/success/Justin is the result of the POST call to http://127.0.0.1:5000/login after filling out the form.
       - This page has been modified since the lecture to include some styling to center align the page
