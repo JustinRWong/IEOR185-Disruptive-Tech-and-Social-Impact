@@ -25,13 +25,13 @@ git clone https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impa
 cd 2020_Spring/app
 ```
 3. Open Ganache and check the Ganache RPC Server aligns with `ganach_url` in app.py
-## Screenshot here! 
+![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%201.36.59%20PM.png?raw=true)
 4. Simply run `python3 app.py`
 
 
 Doing so will start the Flask server and the following endpoints will be available for usage.
 - http://127.0.0.1:5000/ is a health check to ensure that your Flask server  is up and running.
-SCREENSHOT 
+![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%202.00.22%20PM.png)
 
 - http://127.0.0.1:5000/admin is an example page to show that raw text can be rendered using app.route('/admin')
 
@@ -41,7 +41,9 @@ SCREENSHOT
 
 - http://127.0.0.1:5000/login is a route with both GET and POST capabilities
       - The GET renders the page on a broswer, while POST is called after the `submit` button is clicked
-   Screenshot   here
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%201.44.11%20PM.png?raw=true)  |  ![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%202.00.30%20PM.png?raw=true)
 
 - http://localhost:5000/success/Justin is the result of the POST call to http://127.0.0.1:5000/login after filling out the form.
       - This page has been modified since the lecture to include some styling to center align the page
