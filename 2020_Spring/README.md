@@ -44,9 +44,9 @@ Doing so will start the Flask server and the following endpoints will be availab
 | ![Login With Boostrap](Screenshots/Screenshot%202020-04-14%20at%202.00.30%20PM.png)  |  ![Login Without Boostrap](Screenshots/Screenshot%202020-04-14%20at%201.44.11%20PM.png) |
 |:---:|:---:|
 
-| [![VideoBlocks](https://d1ow200m9i3wyh.cloudfront.net/img/assets/videoblocks/images/logo.png)](http://videoblocks.com)  | [![AudioBlocks](https://dtyn3c8zjrx01.cloudfront.net/img/assets/audioblocks/images/logo.png)](http://audioblocks.com) | [![GraphicStock](http://www.graphicstock.com/images/logo.jpg)](http://graphicstock.com) |
-|:---:|:---:|:---:|
-| http://videoblocks.com | http://audioblocks.com | http://graphicstock.com |
+| [![Login With Boostrap](Screenshots/Screenshot%202020-04-14%20at%202.00.30%20PM.png)](http://videoblocks.com)  | [![Login Without Boostrap](Screenshots/Screenshot%202020-04-14%20at%201.44.11%20PM.png)](http://audioblocks.com) |
+|:---:|:---:|
+| http://videoblocks.com | http://audioblocks.com |
 
 - http://localhost:5000/success/Justin is the result of the POST call to http://127.0.0.1:5000/login after filling out the form.
       - This page has been modified since the lecture to include some styling to center align the page
