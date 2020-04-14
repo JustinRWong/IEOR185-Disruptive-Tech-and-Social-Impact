@@ -60,7 +60,7 @@ Once a User is logged in, the Sender fills out a form, specifying the `Sender Ad
 When Sender clicks on the Send ETH, their transaction is executed immediately on the Ganache local blockchain network,  without waiting for a third party to take up the contract and spend processing power to verify and execute the transaction, which is what would typically happen on the Ethereum Main Net.
 
 
-###############################################
+
 
 ## Further Work:
 ### Deploying the basic application on Heroku\
