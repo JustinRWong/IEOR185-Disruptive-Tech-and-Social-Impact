@@ -25,7 +25,7 @@ git clone https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impa
 cd 2020_Spring/app
 ```
 3. Open Ganache and check the Ganache RPC Server aligns with `ganach_url` in app.py
-![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%201.36.59%20PM.png?raw=true)
+![](../Screenshots/Screenshot 2020-04-14 at 1.36.59 PM.png)
 4. Simply run `python3 app.py`
 
 
@@ -41,9 +41,7 @@ Doing so will start the Flask server and the following endpoints will be availab
 
 - http://127.0.0.1:5000/login is a route with both GET and POST capabilities
       - The GET renders the page on a broswer, while POST is called after the `submit` button is clicked
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%201.44.11%20PM.png?raw=true)  |  ![](https://github.com/JustinRWong/IEOR185-Disruptive-Tech-and-Social-Impact/blob/master/2020_Spring/Screenshots/Screenshot%202020-04-14%20at%202.00.30%20PM.png?raw=true)
+![](/../Screenshot/Screenshot 2020-04-14 at 2.00.30 PM.png)  |  ![](/../Screenshot Screenshot/2020-04-14 at 1.44.11 PM.png)
 
 - http://localhost:5000/success/Justin is the result of the POST call to http://127.0.0.1:5000/login after filling out the form.
       - This page has been modified since the lecture to include some styling to center align the page
