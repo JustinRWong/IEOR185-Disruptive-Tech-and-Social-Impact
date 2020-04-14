@@ -2,7 +2,8 @@
 1. Understand what happens in a smart contract, in relation to Ethereum Main net/Ganache
 2. Learn how to write a basic smart contract on remix.ethereum.org
 3. Deploy a contract in a variety of ways (from remix.ethereum.org UI and python code)
-4. Understand how to integrate python with smart contracts.
+4. Understand how to integrate python with smart contracts
+5. Connect a Front End with smart contracts
 
 ## Installations and Dependencies:
 * `Ganache` installed (https://www.trufflesuite.com/ganache)
