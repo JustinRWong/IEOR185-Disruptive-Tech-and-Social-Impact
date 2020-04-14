@@ -42,6 +42,7 @@ Doing so will start the Flask server and the following endpoints will be availab
 | [![Bootstrap Login](Screenshots/LogInBootstrap.png)](app/app.py#L161-L169) | [![Non bootrstrap login](Screenshots/LogIn.png)](app/templates/login.html) |
 |:---:|:---:|
 | http://127.0.0.1:5000/login is a route with both GET and POST capabilities. | The left is with Boostrap for HTML styling, while the left is without |
+
  The GET renders the page on a broswer, while POST is called after the `submit` button is clicked
   
 
