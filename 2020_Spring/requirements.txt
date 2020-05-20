@@ -85,7 +85,7 @@ h5py==2.9.0
 heapdict==1.0.0
 hexbytes==0.2.0
 html5lib==1.0.1
-httplib2==0.13.0
+httplib2==0.18.0
 ibm-cloud-sdk-core==1.0.0
 ibm-watson==4.0.1
 idna==2.7
