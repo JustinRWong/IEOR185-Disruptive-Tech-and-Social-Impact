@@ -1,5 +1,5 @@
 .DS_Store
 *.pyc
 __pycache__
-.ipynb_checkpoint
+*/.ipynb_checkpoint
 2020_Fall/data/*
