@@ -23,7 +23,7 @@ import json
 #
 #
 # # print_json(abi)
-# print(abi)
+# # print(abi)
 # print()
 #
 #
@@ -49,13 +49,13 @@ import json
 
 ###############################################################################
 ##  Sending transactions on a local blockchain Ganache(imagine this being the Ethereum Main net)
-ganache_url = "http://127.0.0.1:7545"
-web3 = Web3(Web3.HTTPProvider(ganache_url))
+# ganache_url = "http://127.0.0.1:7545"
+# web3 = Web3(Web3.HTTPProvider(ganache_url))
 #
-# account_sender ='0x15560C45318bFa2e9F8574Ad1e5AcCCE866f614a'
-# account_recipient =   '0xf387b3256865b24a13cb416f30A2e130E47ff6FA'
+# account_sender ='0xf387b3256865b24a13cb416f30A2e130E47ff6FA'
+# account_recipient =   '0xcA7dA3795C7F5Fb15912050B01e3b3790197386d'
 #
-# sender_private_key = '608014d99658a3497fe4cb60f0a2d29facb14169c829f02cc968a96f39efaa59'
+# sender_private_key = '38bda8028fb8272d65603a7fadb8fa6f51b4952877712032cc30e42e98784dd5'
 # recipient_private_key = '38bda8028fb8272d65603a7fadb8fa6f51b4952877712032cc30e42e98784dd5'
 #
 #
@@ -63,7 +63,7 @@ web3 = Web3(Web3.HTTPProvider(ganache_url))
 # nonce = web3.eth.getTransactionCount(account_sender)
 # print("TX #: " + str(nonce))
 #
-# amount_to_send = 70
+# amount_to_send = 100
 # ## Build transaction
 # tx = {
 #     'nonce' : nonce,                           ## prevents sending transaction twice
