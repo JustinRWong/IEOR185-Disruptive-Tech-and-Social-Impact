@@ -114,4 +114,4 @@ truffle(development)> tokenFarm.address
 
 ### References:
 - https://www.youtube.com/watch?v=CgXQC4dbGUE&ab_channel=DappUniversity
-- https://www.youtube.com/redirect?q=https%3A%2F%2Fgithub.com%2Fdappuniversity%2Fdefi_tutorial&v=CgXQC4dbGUE&redir_token=QUFFLUhqbFc0WnpCSFN1aW9TVlZ0ckE0U1dnRmxFdGFXZ3xBQ3Jtc0ttcS1EZ09jbEZsUTgyZ0VWTC1IZWRCa243ZFhVckE4RDZ0RHA3MjJTdjZLM0RrekZkTElISG9zaGNKX3pqNnJ6VUJxMGJhSi1ReXh3OENRa1M3SjB0eDc3SjVKUVozZlJRSkJhUzZjLVhYc0ZDSU9fVQ%3D%3D&event=video_description
+- https://github.com/dappuniversity/defi_tutorial
