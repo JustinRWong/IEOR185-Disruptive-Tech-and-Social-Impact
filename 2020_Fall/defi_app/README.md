@@ -166,6 +166,9 @@ $
 
 ![staked](./screenshots/staked.png)
 
+A user can then use their ETH to unstake their balance, while retaining their reward balance.
+
+![gassed](./screenshots/gassed.png)
 
 
 ### References:
