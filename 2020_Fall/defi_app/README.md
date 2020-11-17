@@ -153,7 +153,7 @@ Run the following in a terminal under the `defi_app` directory. When it executes
 npm run start
 ```
 
-[![Frontend](./screenshots/frontend)]
+![Frontend](./screenshots/frontend)
 
 Whenever there is a staking balance, we can issue tokens to reward  those who staked their DAI. In a terminal, running the following will update the rewards balance.
 ```
@@ -164,7 +164,7 @@ Tokens issued!
 $
 ````
 
-[![staked](./screenshots/staked)]
+![staked](./screenshots/staked)
 
 
 
