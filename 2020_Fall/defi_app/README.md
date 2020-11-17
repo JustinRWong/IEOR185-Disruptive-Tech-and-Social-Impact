@@ -74,6 +74,13 @@ Having .js files in the test library will allow us to run the command `truffle t
 
 The before block allows us to create the migration to have the same variables deifned.
 
+```
+truffle compile // ensure no compiling issues
+truffle test    // run your test suite
+
+truffle migrate // once your smart contracts do what is desired, migrate it and deploy it  to the local blockchain
+```
+
 
 ## Frontend React App
 
@@ -146,7 +153,7 @@ Run the following in a terminal under the `defi_app` directory. When it executes
 npm run start
 ```
 
-[![Frontend](screenshots/frontend)]
+[![Frontend](./screenshots/frontend)]
 
 Whenever there is a staking balance, we can issue tokens to reward  those who staked their DAI. In a terminal, running the following will update the rewards balance.
 ```
@@ -157,7 +164,7 @@ Tokens issued!
 $
 ````
 
-[![staked](screenshots/staked)]
+[![staked](./screenshots/staked)]
 
 
 
