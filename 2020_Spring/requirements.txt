@@ -121,7 +121,7 @@ livelossplot==0.1.2
 llvmlite==0.28.0
 locket==0.2.0
 lru-dict==1.1.6
-lxml==4.3.2
+lxml==4.6.2
 Markdown==3.1.1
 MarkupSafe==0.23
 matplotlib==3.0.3
